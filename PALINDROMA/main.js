@@ -16,6 +16,18 @@ function isPalindrome(word) {
      
 }
 
+// INVOCO FUNZIONE
+if  (/\d/.test(word)) {
+    console.log('non è una parola');
+    alert('non hai inserito una parola');
+}  else {
+    if (isPalindrome(word)){
+        console.log(word,'è palindorma');
+    } else {
+        console.log(word,'non è palindorma');
+    }
+}
+
 // if (isNaN(isPalindrome(word))) {
 //     console.log(word, "è palindroma");
 // } else {
@@ -36,17 +48,7 @@ function isPalindrome(word) {
 //     }
 // }
 
-// INVOCO FUNZIONE
-if  (/\d/.test(word)) {
-    console.log('non è una parola');
-    alert('non hai inserito una parola');
-}  else {
-    if (isPalindrome(word)){
-        console.log(word,'è palindorma');
-    } else {
-        console.log(word,'non è palindorma');
-    }
-}
+
 
 
 
