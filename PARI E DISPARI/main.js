@@ -16,6 +16,8 @@ console.log('okok');
 //     ELSE SE utente ha scelto pari e la somma è pari vince utente
 //     ELSE vince computer
 
+
+// INPUT UTENTE
 const userChoise = prompt('inserisci "pari" o "dispari"');
 const userNumber = parseInt(prompt('inserisci un numero compreso da 1 a 5'));
 
@@ -27,6 +29,17 @@ console.log('numero pc:', pcNumber);
 
 const sum = userNumber + pcNumber; 
 console.log('somma:', sum); 
+
+
+
+if (pariDispari(sum) === userChoise) {
+    console.log('vince utente');
+} else {
+    console.log('pc vince');
+}
+
+
+// LOGICA PER SVILUPPARE L'IF
 
 
 // funzione numero randomico
@@ -45,8 +58,3 @@ function pariDispari(num) {
 
 
 
-if (pariDispari(sum) === userChoise) {
-    console.log('vince utente');
-} else {
-    console.log('pc vince');
-}
